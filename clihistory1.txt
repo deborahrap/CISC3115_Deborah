@@ -1,3 +1,75 @@
+    1  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    2  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    3  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+    4  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    5  echo
+    6  $echo
+    7  eval "$(/opt/homebrew/bin/brew shellenv)"
+    8  echo
+    9  \n$ echo\n$ echo \n
+   10  $ export PATH=/opt/homebrew/bin:$PATH
+   11  export PATH=/opt/homebrew/bin:$PATH
+   12  brew help\n
+   13  Brew install git\n
+   14  clone https://github.com/deborahrap/CISC3115_DeborahRappoport.git
+   15  git clone https://github.com/deborahrap/CISC3115_DeborahRappoport.git
+   16  pwd
+   17  cd CISC3115_DeborahRappoport/
+   18  mkdir assignment1
+   19  ls
+   20  pwd
+   21  mkdir javacode
+   22  cd javacode/
+   23  ls
+   24  vi HelloWorld.java
+   25  vi HelloWorld
+   26  pwd
+   27  cd CISC_3115
+   28  cd Desktop
+   29  cd CISC_3115
+   30  cd javacode
+   31  vi HelloWorld
+   32  java javacode
+   33  cd Desktop
+   34  cd CISC_3115
+   35  cd jvacode
+   36  cd javacode
+   37  ls
+   38  cd Assignment1
+   39  cd javacode
+   40  ls
+   41  cd ~/Downloads/
+   42  pwd
+   43  git clone https://github.com/deborahrap/CISC3115_Deborah.git
+   44  ls
+   45  cd CISC3115_Deborah
+   46  pwd
+   47  mkdir assignment1
+   48  mikdirpwd
+   49  pwd
+   50  mkdir javacode
+   51  ls
+   52  vi HelloWorld.java
+   53  cd /Users/lalir1/Downloads/CISC3115_Deborah
+   54  pwd
+   55  cd /Users/lalir1/Downloads/CISC3115_Deborah/javacode
+   56  cd /Users/lalir1/Downloads/CISC3115_Deborahcd javacode
+   57  cd /Users/lalir1/Downloads/CISC3115_Deborahcd javacode/
+   58  pwd
+   59  ls
+   60  ls -1
+   61  cd /Users/lalir1/Downloads/CISC3115_Deborah
+   62  ls
+   63  history 
+   64  history > clihistory.txt
+   65  ls
+   66  cat clihostory.txt
+   67  cat clihistory.txt
+   68  git status
+   69  git add HelloWorld.java
+   70  git add clihistory.txt
+   71  git status
+   72  git commit -m "first assignment"
    73  git commit --global user.name "deborahrap"
    74  git config --global user.name"deborahrap"
    75  git commit --global user.name "deborahrap"
@@ -14,3 +86,9 @@
    86  history
    87  history 86
    88  history 1
+   89  history > clihistory1.txt
+   90  add clihistory1.txt
+   91  git add clihistory1.txt
+   92  git push -u origin main
+   93  git commit -m "first assignment"
+   94  git push -u origin main
