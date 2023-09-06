@@ -1,0 +1,16 @@
+   73  git commit --global user.name "deborahrap"
+   74  git config --global user.name"deborahrap"
+   75  git commit --global user.name "deborahrap"
+   76  git config --global user.name "deborahrap"
+   77  git config --global user.email "deborah.rappoport03@bcmail.cuny.edu"
+   78  git commit -m "first assignment"
+   79  git log
+   80  git branchg
+   81  git branch
+   82  git push -u origin main
+   83  git push -u origin main
+   84  git push -u origin main
+   85  git push -u origin main
+   86  history
+   87  history 86
+   88  history 1
