@@ -1,0 +1,16 @@
+   48  mikdirpwd
+   49  pwd
+   50  mkdir javacode
+   51  ls
+   52  vi HelloWorld.java
+   53  cd /Users/lalir1/Downloads/CISC3115_Deborah
+   54  pwd
+   55  cd /Users/lalir1/Downloads/CISC3115_Deborah/javacode
+   56  cd /Users/lalir1/Downloads/CISC3115_Deborahcd javacode
+   57  cd /Users/lalir1/Downloads/CISC3115_Deborahcd javacode/
+   58  pwd
+   59  ls
+   60  ls -1
+   61  cd /Users/lalir1/Downloads/CISC3115_Deborah
+   62  ls
+   63  history 
