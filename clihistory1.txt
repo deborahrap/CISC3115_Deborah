@@ -61,34 +61,3 @@
    61  cd /Users/lalir1/Downloads/CISC3115_Deborah
    62  ls
    63  history 
-   64  history > clihistory.txt
-   65  ls
-   66  cat clihostory.txt
-   67  cat clihistory.txt
-   68  git status
-   69  git add HelloWorld.java
-   70  git add clihistory.txt
-   71  git status
-   72  git commit -m "first assignment"
-   73  git commit --global user.name "deborahrap"
-   74  git config --global user.name"deborahrap"
-   75  git commit --global user.name "deborahrap"
-   76  git config --global user.name "deborahrap"
-   77  git config --global user.email "deborah.rappoport03@bcmail.cuny.edu"
-   78  git commit -m "first assignment"
-   79  git log
-   80  git branchg
-   81  git branch
-   82  git push -u origin main
-   83  git push -u origin main
-   84  git push -u origin main
-   85  git push -u origin main
-   86  history
-   87  history 86
-   88  history 1
-   89  history > clihistory1.txt
-   90  add clihistory1.txt
-   91  git add clihistory1.txt
-   92  git push -u origin main
-   93  git commit -m "first assignment"
-   94  git push -u origin main
