@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class P2 {
+    public static void main(String[] args) {
+        Scanner stdin = new Scanner(System.in);  
+        int count = 0; 
+
+        while (stdin.hasNextInt()) {
+            int num = stdin.nextInt();  
+            if (num == 0) {
+                System.out.print(count + " ");
+                count = 0;
+            } else if (num < 0)  
+                count++;
+        }
+    }
+}
