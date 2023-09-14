@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class P1 {
+    public static void main(String[] args) {
+        Scanner stdin = new Scanner(System.in); 
+
+        int header = stdin.nextInt();  
+
+        double smallest = Double.MAX_VALUE;  
+
+        for (int i = 0; i < header; i++) {
+            double value = stdin.nextDouble();  
+
+            if (value < smallest) smallest = value;
+        }
+        System.out.println(smallest);
+    }
+}
