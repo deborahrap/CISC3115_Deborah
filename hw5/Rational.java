@@ -1,11 +1,11 @@
 package CISC3115_Deborah.hw5;
 
-public class Rational extends Number implements Comparable<Rational>{
+public class Rational extends Number implements Comparable<Rational> {
     private long numerator;
     private long denominator;
 
     public Rational() {
-        this(0,1);
+        this(0, 1);
     }
 
     public Rational(long numerator, long denominator) {
