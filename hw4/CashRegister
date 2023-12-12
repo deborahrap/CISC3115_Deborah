@@ -1,0 +1,61 @@
+i mport java.io.File;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class CashRegister {
+    public static void main(String[] args) throws Exception {
+        Scanner balanceScanner = new Scanner(new File("balance"));
+        Money balance = new Money(balanceScanner);
+        balanceScanner.close();
+
+        System.out.println("Starting balance: " + balance);
+
+        Scanner transactionScanner = new Scanner(new File("transactions"));
+        int transactionCount = 0;
+        Money transactionTotal = new Money();
+
+        while (transactionScanner.hasNext()) {
+            Money transaction = new Money(transactionScanner);
+            balance.add(transaction);
+            transactionTotal.add(transaction);
+            transactionCount++;
+        }
+        transactionScanner.close();
+
+        System.out.println(transactionCount + " transactions");
+        System.out.println("Transaction Total: " + transactionTotal);
+        System.out.println("Closing balance: " + balance);
+
+        PrintWriter writer = new PrintWriter("balance");
+        writer.println(balance);
+        writer.close();
+    }
+
+    static class Money {
+        private int cents;
+
+        public Money() {
+            this.cents = 0;
+        }
+
+        public Money(Scanner scanner) {
+            String moneyString = scanner.next();
+            String[] parts = moneyString.replace("$", "").split("\\.");
+            int dollars = Integer.parseInt(parts[0]);
+            int cents = Integer.parseInt(parts[1]);
+            this.cents = dollars * 100 + cents;
+        }
+
+        public void add(Money other) {
+            this.cents += other.cents;
+        }
+
+        public String toString() {
+            return String.format("$%d.%02d", cents / 100, cents % 100);
+        }
+
+        public boolean equals(Money other) {
+            return this.cents == other.cents;
+        }
+    }
+}
