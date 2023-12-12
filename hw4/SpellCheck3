@@ -1,0 +1,68 @@
+import java.util.*;
+import java.io.*;
+
+class Dictionary {
+    private String[] words;
+
+    public Dictionary(String fileName) throws FileNotFoundException {
+        int wordCount = countWordsInFile(fileName);
+        words = new String[wordCount];
+
+        Scanner fileScanner = new Scanner(new File(fileName));
+        int index = 0;
+        while (fileScanner.hasNext()) {
+            words[index++] = fileScanner.next().toLowerCase();
+        }
+        fileScanner.close();
+    }
+
+    private int countWordsInFile(String fileName) throws FileNotFoundException {
+        Scanner fileScanner = new Scanner(new File(fileName));
+        int count = 0;
+        while (fileScanner.hasNext()) {
+            fileScanner.next();
+            count++;
+        }
+        fileScanner.close();
+        return count;
+    }
+
+    public boolean found(String word) {
+        word = word.toLowerCase();
+        for (String w : words) {
+            if (w.equals(word)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+public class SpellCheck3 {
+    public static void main(String[] args) {
+        try {
+            Dictionary dictionary = new Dictionary("Dictionary");
+            Scanner fileScanner = new Scanner(new File("paper"));
+            int lineNumber = 1;
+
+            while (fileScanner.hasNextLine()) {
+                String line = fileScanner.nextLine();
+                Scanner lineScanner = new Scanner(line);
+
+                while (lineScanner.hasNext()) {
+                    String word = lineScanner.next();
+                    if (!dictionary.found(word)) {
+                        System.out.printf("Line %4d: %s\n", lineNumber, word);
+                    }
+                }
+
+                lineNumber++;
+                lineScanner.close();
+            }
+
+            fileScanner.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
