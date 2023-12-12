@@ -1,0 +1,64 @@
+//Rewritten code
+//13.4
+Number numberRef = new Integer(0);
+Double doubleRef = numberRef.doubleValue();
+
+
+//13.5
+Number[] numberArray = new Number[2];
+numberArray[0] = new Double(1.5);
+
+
+//13.7-13.8
+public class Test {
+    public static void main(String[] args) {
+        Number x = new Integer(3);
+        System.out.println(x.intValue());
+        System.out.println(((Integer)x).compareTo(new Integer(4)));
+    }
+}
+
+//13.16
+interface A {
+    void m1();
+}
+
+class B implements A {
+    public void m1() {
+        System.out.println("m1");
+    }
+}
+
+//13.19
+Integer n1 = new Integer(3);
+Integer n2 = new Integer(4); 
+System.out.println(n1.compareTo(n2)); 
+
+//13.21
+public class Test {
+    public static void main(String[] args) {
+        Person[] persons = {new Person(3), new Person(4), new Person(1)};
+        java.util.Arrays.sort(persons);
+    }
+}
+
+class Person implements Comparable<Person> {
+    private int id;
+
+    Person(int id) {
+        this.id = id;
+    }
+
+    public int compareTo(Person other) {
+        return Integer.compare(this.id, other.id);
+    }
+}
+
+//13.26
+public class Test {
+    public static void main(String[] args) {
+        GeometricObject x = new Circle(3);
+        GeometricObject y = x;
+        System.out.println(x == y); 
+    }
+}
